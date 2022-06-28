@@ -1,1 +1,2 @@
-# ProjetoSoftware
+# Projeto de Software
+Membros:
