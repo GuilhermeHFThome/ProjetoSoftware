@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Hotel';
+}
+label{
+  text-align: left;
+}
+body{
+    background: url("/Front/Imgs/background.jpg");
+}
+/*@font-face {
+  font-family: 'Hotel' ;
+  src: url(/Front/Imgs/OFL.txt) format('opentype'), url(/Front/Imgs/ShadowsIntoLight-Regular.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+*/
+.containergrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 25px;
+}
+.containerflex{
+  display: flex;
+  justify-content: center;
+}
+
+/*Header*/
+.header {
+  height: 100px;
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 17;  
+  background-color: #161A1D;
+  align-items: center;
+}
+.header h1 {
+  font-family: 'Hotel';
+  display: grid;
+  grid-column-start: 3 ;
+  grid-column-end: 7;
+  font-size: 25px;
+  color: #fff;
+}
+.header nav {
+  display: grid;
+  grid-column-start: 11;
+  grid-column-end: 17;
+  font-size: 25px;
+  color: #fff;
+}
+
+/*Form*/
+.title{
+  background-color: #ccc;
+  display: grid;
+  grid-column-start: 3 ;
+  grid-column-end: 7;
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+}
+.c1{
+  background-color: #ccc;
+  display: grid;
+  grid-column-start: 1 ;
+  grid-column-end: 5;
+}
+
+/*Botão*/
+.comfirmbutton{
+  display: flex;
+  justify-content: center;
+}
+.button{
+  text-align: center;
+  background-color: #161A1D;
+  color: #fff;
+  border-radius: 5px;  
+  border: 2px solid #ccc;
+  text-align: center;
+  margin-top: 10px;
+  padding: 8px;
+  font-weight: 600;
+  border: 2px solid #ccc;
+}
+
+/*Footer*/
+.footer {
+  width: 100%;
+  height: 80px;
+  display: grid;
+  position: absolute;
+  text-align: left;
+  bottom: 0;
+  background-color: #161A1D;  
+}
+
+.footer p{
+  color: #fff;
+  grid-column-start: 3;
+  grid-column-end: 15;
+  margin-top: 30px;
+}
