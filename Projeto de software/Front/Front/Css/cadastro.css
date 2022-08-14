@@ -64,7 +64,6 @@ body{
   color: #fff;
 }
 
-
 .form-acesso {
   width: 30%;
   height: auto;
@@ -77,7 +76,7 @@ body{
 
 .form-acesso input{
   height: 40px;
-  width: 95%;
+  width: 330px;
   background-color: #F5F3F4;
   color: #000;
   border-radius: 8px;
@@ -86,7 +85,12 @@ body{
   border: 2px solid #ccc;
   outline: 0;
   font-size: 15px;
+  padding-left: 5px;
 }
+#name::placeholder {
+  
+}
+
 
 /*Botão*/
 .comfirmbutton{

@@ -8,7 +8,8 @@ label{
   text-align: left;
 }
 body{
-    background: url("/Front/Imgs/background.jpg");
+    background-color: #fff;
+    /*background: url("/Front/Imgs/background.jpg");*/
 }
 /*@font-face {
   font-family: 'Hotel' ;
@@ -40,7 +41,7 @@ body{
   font-family: 'Hotel';
   display: grid;
   grid-column-start: 3 ;
-  grid-column-end: 7;
+  grid-column-end: 11;
   font-size: 25px;
   color: #fff;
 }
@@ -52,47 +53,96 @@ body{
   color: #fff;
 }
 
-/*Form*/
+/*Begin*/
+
+.begin{
+  max-width: 1500px;
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 17;
+  height: 450px;
+  margin-top: 65px;
+  background-color: #ccc;
+}
+.begin img{
+  display: grid;
+  grid-column-start: 3;
+  grid-column-end: 10;
+  height: 350px;
+  margin-top: 50px;
+}
+.begin p {
+  display: grid;
+  grid-column-start: 10;
+  grid-column-end: 15;
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+/*Cadastrar Cliente*/
+.sec1{
+  max-width: 1080px;
+  margin-top: 100px;
+  display: grid;
+  grid-column-start: 3;
+  grid-column-end: 15;
+  background-color: #161A1D;
+  border-radius: 15px;  
+}
 .title{
   background-color: #ccc;
-  display: grid;
-  grid-column-start: 3 ;
-  grid-column-end: 7;
+  margin-top: 35px;
+  padding: 10px;
+  display: 	grid;
   font-size: 40px;
   text-align: center;
   color: #fff;
 }
 .c1{
+  height: 250px;
   background-color: #ccc;
   display: grid;
-  grid-column-start: 1 ;
-  grid-column-end: 5;
+  grid-column-start: 3;
+  grid-column-end: 9;
+  margin-top: 50px;
+}.c2{
+  height: 250px;
+  background-color: #ccc;
+  display: grid;
+  grid-column-start: 9 ;
+  grid-column-end: 15;
+  margin-top: 50px;
 }
 
 /*Botão*/
-.comfirmbutton{
+.confirmbutton{
   display: flex;
   justify-content: center;
 }
 .button{
+  width: 150px;
   text-align: center;
-  background-color: #161A1D;
+  background-color: #1d3140;
   color: #fff;
   border-radius: 5px;  
   border: 2px solid #ccc;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 25px;
+  margin-bottom: 35px;
   padding: 8px;
   font-weight: 600;
-  border: 2px solid #ccc;
 }
+
+/*Reaizar Reserva*/
+
 
 /*Footer*/
 .footer {
   width: 100%;
   height: 80px;
   display: grid;
-  position: absolute;
+  position: relative;
+  margin-top: 150px;
   text-align: left;
   bottom: 0;
   background-color: #161A1D;  
