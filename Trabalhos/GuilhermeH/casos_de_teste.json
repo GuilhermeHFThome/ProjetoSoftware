@@ -1,0 +1,25 @@
+{
+  "Frase": {
+    "string":[
+      "hoje é meu dia preferido de aula remota", "Mauris sit amet", "Aliquam sit amet diam in magna bibendum imperdiet", "Phasellus in felis", "Nulla tellus", "Nam congue, risus semper porta volutpat", "Suspendisse potenti.", "Vestibulum rutrum rutrum neque.", "Vivamus metus arcu", "Maecenas tristique", "Aliquam non mauris", "Nulla neque libero", "Nam congue, risus semper porta volutpat", "Vestibulum ante ipsum primis", "Suspendisse potenti", "Suspendisse ornare", "Mauris enim leo, rhoncus sed", "Pellentesque ultrices mattis odio", "Phasellus in felis", "Aenean lectus", "Aliquam non mauris", "Aenean auctor gravida sem", "Praesent blandit lacinia erat", "Nullam porttitor lacus at turpis", "Pellentesque at nulla", "Ut tellus", "Nullam sit amet turpis", "Proin leo odio, porttitor", "Phasellus sit amet erat", "Duis bibendum", "In hac habitasse platea dictumst", "Proin leo odio", "In quis justo", "Lorem ipsum dolor", "Nam tristique tortor eu pede", "Praesent lectus", "Integer pede justo, lacinia eget", "Nulla mollis molestie lorem", "Morbi non lectus", "Nulla suscipit ligula in lacus", "Pellentesque at nulla", "Curabitur in libero ut massa volutpat convallis", "Aenean fermentum", "Vestibulum ante ipsum primis", "Donec ut dolor", "Vivamus tortor", "Cras in purus eu magna vulputate luctus", "Nam ultrices, libero non mattis pulvinar", "Morbi quis tortor id nulla ultrices aliquet", "Etiam faucibus cursus urna"
+    ]
+  },
+  "Palavra": {
+    "string":[
+      "hoje", "Mauri", "Aliqu", "Phase", "Nulla", "Nam c", "Suspe", "Vesti", "Vivam", "Maece", "Aliqu", "Nulla", "Nam c", "Vesti", "Suspe", "Suspe", "Mauri", "Pelle", "Phase", "Aenea", "Aliqu", "Aenea", "Praes", "Nulla", "Pelle", "Ut te", "Nulla", "Proin", "Phas", "Duis ", "In ha", "Proin", "In qu", "Lorem", "Nam t", "Praes", "Integ", "Nulla", "Morbi", "Nulla", "Pelle", "Curab", "Aenea", "Vesti", "Donec", "Vivam", "Cras ", "Nam u", "Morbi", "Etiam"
+    ]
+  },
+
+
+  "NumInicial": {
+    "num":[
+      123, 120, 486, 773, 988, 472, 938, 956, 504, 371, 1000, 671, 623, 779, 698, 773, 21, 231, 54, 807, 219, 903, 659, 733, 629, 446, 193, 696, 399, 62, 867, 26, 910, 515, 992, 851, 532, 17, 837, 601, 598, 161, 337, 666, 238, 304, 370, 761, 275, 599
+    ]
+  },
+  "NumInvertido": {
+    "num":[
+      321, 21, 684, 377, 889, 274, 839, 659, 405, 173, 1, 176, 326, 977, 896, 377, 12, 132, 45, 708, 912, 309, 956, 337, 926, 644, 391, 696, 993, 26, 768, 62, 19, 515, 299, 158, 235, 71, 738, 106, 895, 161, 733, 666, 832, 403, 73, 167, 572, 995
+    ]
+  }
+
+}
