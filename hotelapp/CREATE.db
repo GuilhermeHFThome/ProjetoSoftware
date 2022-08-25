@@ -1,7 +1,0 @@
-CREATE TABLE clientes (
-    name VARCHAR(50),
-    lastName VARCHAR(50),
-    cpf VARCHAR(50),
-    address VARCHAR(100),
-    number INTEGER
-);

@@ -39,7 +39,7 @@
         app.use(express.static(path.join(__dirname, 'public'))) //falando q é a pasta public que guarda todos os arquivos estaticos
 
         app.use ((req, res, next) => {
-            console.log('eu sou um middleware')
+            console.log('middleware funcionando')
             next()
         })
 

@@ -1,4 +1,5 @@
 const express = require('express')
+const Room = require('../models/Room')
 const router = express.Router()
 const Client = require('../models/Cadastro') // chama o arquivo do model
 
@@ -7,24 +8,44 @@ router.get('/index',(req, res) =>{
     res.render('receptionist/index')
 })
 
-/*router.get('/search', (req, res) => {
-    res.render('receptionist/search')
-})*/
 
-router.get('/searched/:cpf', (req, res) => {
-    Client.findAll({where: {'cpf': req.params.cpf}}).then((clientes) => {
+router.get('/searched/:id', (req, res) => {
+    Client.findAll({where: {'id': req.params.id}}).then((clientes) => {
         res.render('receptionist/searched', {clientes: clientes})
     }).catch((erro) => {
         res.send('Esse cliente nao existe' + erro)
     })
 })
 
+router.post('/edit', (req, res) => {
+        Client.update({
+            name: req.body.name,
+            lastName: req.body.lastName, 
+            cpf: req.body.cpf,
+            address : req.body.address,
+            number: req.body.number,
+            id: req.body.id
+        },{where: {id: req.body.id}}).then(() => {
+            res.flash('success_msg', "cliente editado com sucesso")
+            res.redirect('/clients')
+        }).catch((err) => {
+            console.log(JSON.stringify(req.body))
+            res.redirect('/receptionist/clients')
+        })
+    })
+
+
 router.get('/reserva', (req, res) => {
-    res.render('receptionist/reserva')
+    Room.findAll({order: [['number','ASC']]}).then((quartos) => {
+        res.render('receptionist/reserva', {quartos: quartos})
+    }).catch((err) => {
+        req.flash('error_msg', 'Houve um erro ao listar os quartos')
+        res.redirect('/receptionist/index')
+    })
 })
 
-router.get('/edit/:cpf',(req, res) => {
-    Client.findAll({where : {'cpf': req.params.cpf}}).then((clientes) => {
+router.get('/edit/:id',(req, res) => {
+    Client.findAll({where : {'id': req.params.id}}).then((clientes) => {
         res.render('receptionist/edit', {clientes: clientes})
     }).catch((erro) => {
         res.send('erro ao entrar no menu de edição' + erro)
@@ -35,7 +56,7 @@ router.get('/clients', (req,res) => {
     Client.findAll({order: [['id', 'DESC']]}).then((clientes) => {
         res.render('receptionist/clients', {clientes: clientes})
     }).catch((err) => {
-        req.flash('error_msg', 'Houve um erro ao listar as categorias')
+        req.flash('error_msg', 'Houve um erro ao listar os clientes')
         res.redirect('/receptionist/index')
     })
     
@@ -79,12 +100,10 @@ router.post('/poscadastro', (req, res) => {
             number: req.body.number,
             id: req.body.id
         }).then(() => {
-            res.redirect('/clients')
+            res.redirect('/receptionist/clients')
         }).catch((erro) => {
             res.send('Falha ao criar usuario')
         })
-        
-    res.render('receptionist/poscadastro')
     }
 
 })
