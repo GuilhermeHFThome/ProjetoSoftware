@@ -1,0 +1,6 @@
+CREATE TABLE usuarios (
+    login VARCHAR(20),
+    password VARCHAR(20)
+);
+
+INSERT INTO usuarios (login, password, 'LoginDoADM', 'SenhaDoADM');
