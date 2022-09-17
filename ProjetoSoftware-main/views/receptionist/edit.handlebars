@@ -1,0 +1,45 @@
+{{#each erros}}
+    <div class="alert alert-danger"></div>
+{{/each}}
+
+{{#each clientes }}
+
+    
+
+    <div class="container mt-4">
+<h3>Editar Cliente</h3>
+  <form class="row g-3" method="post" action="/receptionist/edit">
+  <input type="hidden" name="id" id="id" value="{{dataValues.id}}">
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label">Name</label>
+    <input name="name" type="name" class="form-control" id="inputName4" value="{{dataValues.name}}" >
+  </div>
+  <div class="col-md-6">
+    <label for="inputPassword4" class="form-label">Last name</label>
+    <input name="lastName" type="name" class="form-control" id="inputmname4" value="{{dataValues.lastName}}">
+  </div>
+  <div class="col-12">
+    <label for="inputAddress" class="form-label">CPF</label>
+    <input name="cpf" type="text" class="form-control" id="inputAddress" value="{{dataValues.cpf}}">
+  </div>
+  <div class="col-12">
+    <label for="inputAddress" class="form-label">Address</label>
+    <input name="address" type="text" class="form-control" id="inputAddress" value="{{dataValues.address}}">
+  </div>
+  <div class="col-12">
+    <label for="inputPhoneNumber" class="form-label">Number</label>
+    <input name="number" type="text" class="form-control" id="inputNumber" value="{{dataValues.number}}">
+  </div>
+  <div class="col-12">
+    <br>
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary" style="background-color:#0B090A ; border-color:#0B090A;">Edit</button>
+  </div>
+  <br>
+</form>
+{{/each}}
+
+
+<a href="http://localhost:8081/receptionist/index">
+        <button class="btn btn-success" style="background-color:#0B090A ; border-color:#0B090A;">voltar para pagina inicial</button>
+    </a>
