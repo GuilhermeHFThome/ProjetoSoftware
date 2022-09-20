@@ -17,3 +17,11 @@ https://app.conceptboard.com/board/psyp-26xa-gzic-nu8f-42on
 <br>
 -Trello (incompleto) ->
 https://trello.com/b/hnM22se5/sistema-de-hotelaria
+
+## Passos para utilização:
+<ul>
+<li>oi</li>
+<li>oi</li>
+<li>oi</li>
+<li>oi</li>
+</ul>
