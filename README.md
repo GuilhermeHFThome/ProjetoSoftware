@@ -1,4 +1,4 @@
-# Trabalho da matéria ProjetoSoftware
+# Trabalho da matéria - Projeto de Software
 
 ## Objetivo:
 Criar um sistema de reserva de hotel, no qual permita cadastrar cliente e editar suas informações, permitindo o administrador realizar reservas, cadastrar quartos e usuarios(recepcionista) e clientes, e a recepcionista é permitido apenas cadastrar e editar clientes, podendo tambem realizar reserva.
