@@ -59,6 +59,7 @@ router.get('/clients', (req,res) => {
         req.flash('error_msg', 'Houve um erro ao listar os clientes')
         res.redirect('/receptionist/index')
     })
+    
 })
 
 

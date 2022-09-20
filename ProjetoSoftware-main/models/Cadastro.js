@@ -24,7 +24,12 @@ const Client = db.sequelize.define('clientes', {
 module.exports = Client
 
 const User = db.sequelize.define('usuarios', {
-
+    name: {
+        type: db.Sequelize.STRING
+    },
+    lastName: {
+        type: db.Sequelize.STRING
+    },
     login: {
         type: db.Sequelize.STRING
     },
