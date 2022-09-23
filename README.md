@@ -15,9 +15,10 @@ Luccas Thomaz Pereira Lavrador <br>
 -Backlog/Sprints/Tecnologias/Outros documentos ->
 https://app.conceptboard.com/board/psyp-26xa-gzic-nu8f-42on
 <br>
--Trello (incompleto) ->
+-Trello (Desatualizado) ->
 https://trello.com/b/hnM22se5/sistema-de-hotelaria
-
+<br>
+-Figma (Desatualizado) ->
 ## Passos para utilização:
 <ul>
 <li>oi</li>
