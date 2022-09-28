@@ -1,0 +1,50 @@
+{{#each erros}}
+    <div class="alert alert-danger"></div>
+{{/each}}
+
+{{#each quartos}}
+
+  
+
+    <div class="container mt-4">
+<h3>Editar Quarto</h3>
+  <form class="row g-3" method="post" action="/admin/editRoom">
+  <input type="hidden" name="id" id="id" value="{{dataValues.id}}">
+
+  <div class="col-md-4">
+    <label for="inputEmail4" class="form-label">Número</label>
+    <input name="number" type="number" max="999" class="form-control" id="inputName4" value="{{dataValues.number}}">
+  </div>
+
+  <div class="col-md-4">
+    <label for="inputPassword4" class="form-label">Diária (R$)</label>
+    <input name="diaria" type="number" max="999" class="form-control" id="inputmname4" value="{{dataValues.diaria}}" >
+  </div>
+
+  <div class="col-4">
+    <label for="inputAddress" class="form-label">Quantidade de Pessoas</label>
+    <input name="npessoas" type="number" min="1" max="5" class="form-control" id="inputAddress" value="{{dataValues.npessoas}}">
+  </div>
+
+  <div class="col-12">
+      <label for="inputPhoneNumber" class="form-label">Início</label>
+      <input name="inicio" type="date" class="form-control" id="inputNumber" value="{{dataValues.inicio}}" >
+  </div>
+
+  <div class="col-12">
+      <label for="inputPhoneNumber" class="form-label">Fim</label>
+      <input name="fim" type="date" class="form-control" id="inputmname4" value="{{dataValues.fim}}" >
+  </div>
+
+    <br>
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary" style="background-color:#0B090A ; border-color:#0B090A;">Editar</button>
+  </div>
+  <br>
+</form>
+{{/each}}
+
+<hr>
+<a href="http://localhost:8081/admin/index">
+        <button class="btn btn-success" style="background-color:#0B090A ; border-color:#0B090A;">Voltar para Página Inicial</button>
+    </a>
