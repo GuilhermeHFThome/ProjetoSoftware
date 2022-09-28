@@ -1,0 +1,45 @@
+{{#each erros}}
+    <div class="alert alert-danger"></div>
+{{/each}}
+
+{{#each usuarios}}
+
+    
+
+    <div class="container mt-4">
+<h3>Editar Usuário</h3>
+  <form class="row g-3" method="post" action="/admin/editUser">
+  <input type="hidden" name="id" id="id" value="{{dataValues.id}}">
+
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label">Nome</label>
+    <input name="nameU" type="name" class="form-control" id="inputName4" value="{{dataValues.nameU}}" >
+  </div>
+
+  <div class="col-md-6">
+    <label for="inputPassword4" class="form-label">Sobrenome</label>
+    <input name="lastNameU" type="name" class="form-control" id="inputmname4" value="{{dataValues.lastNameU}}">
+  </div>
+
+  <div class="col-12">
+    <label for="inputAddress" class="form-label">Usuário</label>
+    <input name="login" type="text" class="form-control" id="inputAddress" value="{{dataValues.login}}">
+  </div>
+
+  <div class="col-12">
+    <label for="inputAddress" class="form-label">Senha</label>
+    <input name="password" type="text" class="form-control" id="inputAddress" value="{{dataValues.password}}">
+  </div>
+    <br>
+    
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary" style="background-color:#0B090A ; border-color:#0B090A;">Editar</button>
+  </div>
+  <br>
+</form>
+{{/each}}
+
+<hr>
+<a href="http://localhost:8081/admin/index">
+        <button class="btn btn-success" style="background-color:#0B090A ; border-color:#0B090A;">Voltar para Página Inicial</button>
+    </a>
