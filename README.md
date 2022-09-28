@@ -20,10 +20,3 @@ https://trello.com/b/hnM22se5/sistema-de-hotelaria
 <br>
 -Figma (Desatualizado) ->
 https://www.figma.com/file/nEzUxLdWKp1PWcAr5l05iF/Projeto-de-Software---Sistema-Hotelaria---Interface?node-id=0%3A1
-## Passos para utilização:
-<ul>
-<li>oi</li>
-<li>oi</li>
-<li>oi</li>
-<li>oi</li>
-</ul>
